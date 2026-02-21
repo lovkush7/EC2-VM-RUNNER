@@ -1,0 +1,23 @@
+{
+  "name": "vm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx watch ./src/index.ts"
+     
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.18.0",
+    "reflect-metadata": "^0.2.2",
+    "tsx": "^4.21.0",
+    "typeorm": "^0.3.28"
+  }
+}
