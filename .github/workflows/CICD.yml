@@ -1,0 +1,25 @@
+name: CICDPIPELINE
+on:
+    push:
+        branches: ["main"]
+
+jobs:
+    build:
+        runs-on: Agent-1
+        strategy:
+            matrix:
+                node-version: [20.x, 22.x]
+
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v3
+              with:
+                fetch-depth: 0
+
+            - name: setup node${{matrix.node-version}}
+              uses: actions/setup-node@v3
+              with:
+                node-version: ${{matrix.node-version}}
+                
+            - name: install dependencies
+              run: pnpm 
