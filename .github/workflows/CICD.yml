@@ -22,7 +22,7 @@ jobs:
                 node-version: ${{matrix.node-version}}
 
             - name: setup pnpm
-              uses: pnpm/setup-pnpm@v4
+              uses: pnpm/action-setup@v4
               with:
                 version: 10    
                 
