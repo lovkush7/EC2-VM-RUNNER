@@ -24,7 +24,7 @@ jobs:
             - name: setup pnpm
               uses: pnpm/setup-pnpm@v4
               with:
-                version:10    
+                version: 10    
                 
             - name: install dependencies
               run: pnpm ci
