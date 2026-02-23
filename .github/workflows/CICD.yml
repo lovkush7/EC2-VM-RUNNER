@@ -27,4 +27,4 @@ jobs:
                 version:10    
                 
             - name: install dependencies
-              run: pnpm 
+              run: pnpm ci
