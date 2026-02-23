@@ -20,6 +20,11 @@ jobs:
               uses: actions/setup-node@v3
               with:
                 node-version: ${{matrix.node-version}}
+
+            - name: setup pnpm
+              uses: pnpm/setup-pnpm@v4
+              with:
+                version:10    
                 
             - name: install dependencies
               run: pnpm 
