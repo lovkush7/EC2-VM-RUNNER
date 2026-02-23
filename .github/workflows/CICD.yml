@@ -28,3 +28,14 @@ jobs:
                 
             - name: install dependencies
               run: pnpm ci
+
+            - name:  build
+              run: pnpm run build --if-present  
+
+
+    compile:
+        runs-on: agent
+        depends-on: build
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v3
